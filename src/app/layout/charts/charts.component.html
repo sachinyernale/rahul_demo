@@ -1,0 +1,46 @@
+<div class="card m-3">
+    <h5 class="card-header" style="text-align: center;">Update Product</h5>
+    <div class="card-body">
+        <form [formGroup]="updateForm" (ngSubmit)="onSubmit()">
+            <div class="form-row justify-content-center">
+                <div class="col-sm-6">
+
+
+                    <label>Product Id</label>
+                    <input type="text" formControlName="p_id" class="form-control"
+                         [readonly]="isView" />
+                    
+                </div>
+            </div>
+
+            <div class="form-row justify-content-center">
+                <div class="col-sm-6">
+                    <label>Product Name</label>
+                    <input type="text" formControlName="p_name" class="form-control"
+                        [ngClass]="{ 'is-invalid': submitted && f.p_name.errors }" [readonly]="isView" />
+                    <div *ngIf="submitted && f.p_name.errors" class="invalid-feedback">
+                        <div *ngIf="f.p_name.errors.required">Product Name is required</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row justify-content-center">
+                <div class="col-sm-6 ">
+                    <label>p_price</label>
+                    <input type="text" formControlName="p_price" class="form-control"
+                        [ngClass]="{ 'is-invalid': submitted && f.p_price.errors }" [readonly]="isView" />
+                    <div *ngIf="submitted && f.p_price.errors" class="invalid-feedback">
+                        <div *ngIf="f.p_price.errors.required">p_price is required</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="text-center" style="margin-top: 2%;">
+                <button class="btn btn-primary mr-1" *ngIf="!isView">Update</button>
+                <button class="btn btn-secondary" type="reset" (click)="back()">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>All Products</h1>
+  
+    <a  class="btn btn-success" style="float: right;margin-bottom: 1%;" (click)="addProduct()">Create New Product</a>
+    
+    <table class="table table-bordered">
+      <tr>
+        <th>Id</th>
+        <th width="600px">Product Name</th>
+        <th>Price</th>
+        <th >Action</th>
+      </tr>
+      <tr *ngFor="let product of productList">
+        <td>{{ product.p_id }}</td>
+        <td>{{ product.p_name }}</td>
+        <td>₹ {{ product.p_price }}</td>
+        <td>
+          <a  class="btn btn-info" (click)="view(product.p_id,product.p_name,product.p_price)">View</a>&nbsp;
+          <a   class="btn btn-primary" (click)="edit(product.p_id,product.p_name,product.p_price)">Edit</a>&nbsp;
+          <button type="button"  class="btn btn-danger" (click)="deleteProduct(product.p_id)">Delete</button>
+        </td>
+      </tr>
+    </table>
+ </div>

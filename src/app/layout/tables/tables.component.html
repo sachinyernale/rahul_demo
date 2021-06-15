@@ -1,0 +1,95 @@
+<div [@routerTransition]>
+    <app-page-header [heading]="'Tables'" [icon]="'fa-table'"></app-page-header>
+    <div class="row">
+        <div class="col col-xl-6 col-lg-12">
+            <div class="card mb-3">
+                <div class="card-header">
+                    Basic example
+                </div>
+                <div class="card-body table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Sachin</td>
+                                <td>Y</td>
+                                <td>@SY</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Rahul</td>
+                                <td>B</td>
+                                <td>@RB</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Rohit</td>
+                                <td>M</td>
+                                <td>@RM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+           
+            
+           
+        </div>
+        <div class="col col-xl-6 col-lg-12">
+ 
+            <div class="card mb-3">
+                <div class="card-header">Contextual classes</div>
+                <table class="card-body table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-active">
+                            <th scope="row">1</th>
+                            <td>Sachin</td>
+                            <td>Rahul</td>
+                            <td>Rohit</td>
+                        </tr>
+                        <tr class="table-success">
+                            <th scope="row">2</th>
+                            <td>Sachin</td>
+                            <td>Rahul</td>
+                            <td>Rohit</td>
+                        </tr>
+                        <tr class="table-info">
+                            <th scope="row">3</th>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>C</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <th scope="row">3</th>
+                            <td>X</td>
+                            <td>Y</td>
+                            <td>Z</td>
+                        </tr>
+                        <tr class="table-danger">
+                            <th scope="row">3</th>
+                            <td>Ajay</td>
+                            <td>Vijay</td>
+                            <td>Ajay</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
