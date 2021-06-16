@@ -35,9 +35,9 @@ export class UserDataComponent implements OnInit {
   addProduct(){
     this.router.navigate(['/charts'])
   }
-  deleteProduct(p_id){
-   
-    this.userDataService.deleteProduct(p_id).subscribe(success=>{
+  deleteProduct(product){
+   alert(JSON.stringify(product))
+    this.userDataService.deleteProduct(product).subscribe(success=>{
       this.productList=success;
       this.toastr.success('SUCCESS!! Updated succefully');
       this.ngOnInit();
