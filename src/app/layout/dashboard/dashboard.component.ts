@@ -15,17 +15,17 @@ export class DashboardComponent implements OnInit {
         this.sliders.push(
            
             {
-                imagePath: 'assets/images/slider2.jpg',
+                imagePath: '../assets/images/slider2.jpg',
                 label: 'Synechron',
                 text: 'Synechron.'
             },
             {
-                imagePath: 'assets/images/slider1.jpg',
+                imagePath: '../assets/images/slider1.jpg',
                 label: 'HSBC',
                 text: 'HSBC'
             },
             {
-                imagePath: 'assets/images/slider3.jpg',
+                imagePath: '../assets/images/slider3.jpg',
                 label: 'HSBC-II',
                 text: 'HSBC-II'
             }

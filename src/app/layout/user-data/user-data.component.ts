@@ -36,7 +36,7 @@ export class UserDataComponent implements OnInit {
     this.router.navigate(['/charts'])
   }
   deleteProduct(product){
-   alert(JSON.stringify(product))
+   
     this.userDataService.deleteProduct(product).subscribe(success=>{
       this.productList=success;
       this.toastr.success('SUCCESS!! Updated succefully');
