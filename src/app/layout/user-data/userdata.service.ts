@@ -9,7 +9,7 @@ export class UserdataService {
   URL: string;
 
   constructor(private httpClient:HttpClient) {
-    this.URL= 'http://af336c890cd1a4c1eae36f972d556914-1183209814.us-east-1.elb.amazonaws.com/';
+    this.URL= 'http://af336c890cd1a4c1eae36f972d556914-1183209814.us-east-1.elb.amazonaws.com:8080/';
    }
 
   getAll() {
