@@ -44,7 +44,7 @@ export class ChartsComponent implements OnInit {
     }
     get f() { return this.updateForm.controls; }
     onSubmit() {
-        alert(this.updateForm.value.p_id)
+        
         this.submitted = true;
         if (this.updateForm.invalid) {
             return;

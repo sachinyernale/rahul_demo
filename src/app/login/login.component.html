@@ -6,7 +6,7 @@
             <form role="form"  [formGroup]="loginForm" >
                 <div class="form-content">
                     <div class="form-group">
-                        <input [placeholder]="'Username' | translate" class="form-control input-underline input-lg" type="text"
+                        <input [placeholder]="'Username'" class="form-control input-underline input-lg" type="text"
                         formControlName="username"  [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
                         <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
                             <div *ngIf="f.username.errors.required">Username is required</div>
@@ -15,7 +15,7 @@
 
                     <div class="form-group">
                         <input
-                            [placeholder]="'Password' | translate"
+                            [placeholder]="'Password'"
                             class="form-control input-underline input-lg"
                             type="password" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }"
                         />
@@ -25,10 +25,10 @@
                     </div>
                 </div>
                 <a (click)="onLoggedin()"  class="btn rounded-btn">{{
-                    'Log in' | translate
+                    'Log in' 
                 }}</a>
                 &nbsp;
-                <!-- <a [routerLink]="['/signup']" class="btn rounded-btn">{{ 'Register' | translate }}</a> -->
+                <!-- <a [routerLink]="['/signup']" class="btn rounded-btn">{{ 'Register'  }}</a> -->
             </form>
         </div>
     </div>

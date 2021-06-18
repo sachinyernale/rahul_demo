@@ -2,50 +2,50 @@
     <div class="list-group">
         <a [routerLinkActive]="['router-link-active']" class="list-group-item" routerLink="/dashboard">
             <i class="fa fa-fw fa-dashboard"></i>&nbsp;
-            <span>{{ 'Dashboard' | translate }}</span>
+            <span>{{ 'Dashboard'  }}</span>
         </a>
 
         <a [routerLinkActive]="['router-link-active']" [routerLink]="['/userdata']" class="list-group-item">
             <i class="fa fa-th-list"></i>&nbsp;
-            <span>{{ 'Services' | translate }}</span>
+            <span>{{ 'Services'  }}</span>
         </a>
         <a [routerLinkActive]="['router-link-active']" [routerLink]="['/tables']" class="list-group-item">
             <i class="fa fa-fw fa-table"></i>&nbsp;
-            <span>{{ 'Tables' | translate }}</span>
+            <span>{{ 'Tables'  }}</span>
         </a>
         <!-- <a [routerLinkActive]="['router-link-active']" [routerLink]="['/charts']" class="list-group-item">
             <i class="fa fa-fw fa-bar-chart-o"></i>&nbsp;
-            <span>{{ 'Product' | translate }}</span>
+            <span>{{ 'Product'  }}</span>
         </a> -->
-        <a [routerLinkActive]="['router-link-active']" [routerLink]="['/forms']" class="list-group-item">
+        <!-- <a [routerLinkActive]="['router-link-active']" [routerLink]="['/forms']" class="list-group-item">
             <i class="fa fa-fw fa-edit"></i>&nbsp;
-            <span>{{ 'Reactive Forms' | translate }}</span>
-        </a>
+            <span>{{ 'Reactive Forms'  }}</span>
+        </a> -->
 
 
         <div class="nested-menu">
             <a (click)="addExpandClass('pages')" class="list-group-item">
                 <i class="fa fa-plus"></i>&nbsp;
-                <span>{{ 'Menu' | translate }}</span>
+                <span>{{ 'Menu'  }}</span>
             </a>
             <li [class.expand]="showMenu === 'pages'" class="nested">
                 <ul class="submenu">
                     <li>
                         <a href="javascript:void(0)">
                             <i class="fa fa-monument"></i>&nbsp;
-                            <span>{{ 'Submenu' | translate }}</span>
+                            <span>{{ 'Submenu'  }}</span>
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
                             <i class="fa fa-monument"></i>&nbsp;
-                            <span>{{ 'Submenu' | translate }}</span>
+                            <span>{{ 'Submenu'  }}</span>
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
                             <i class="fa fa-monument"></i>&nbsp;
-                            <span>{{ 'Submenu' | translate }}</span>
+                            <span>{{ 'Submenu'  }}</span>
                         </a>
                     </li>
                 </ul>
@@ -53,7 +53,7 @@
         </div>
         <a [routerLinkActive]="['router-link-active']" [routerLink]="['/blank-page']" class="list-group-item">
             <i class="fa fa-file-o"></i>&nbsp;
-            <span>{{ 'Dynamic Component' | translate }}</span>
+            <span>{{ 'Dynamic Component'  }}</span>
         </a>
 
 
@@ -61,13 +61,13 @@
 
             <div class="nested-menu">
                 <a (click)="addExpandClass('languages')" class="list-group-item">
-                    <span><i class="fa fa-language"></i>&nbsp; {{ 'Language' | translate }} <b class="caret"></b></span>
+                    <span><i class="fa fa-language"></i>&nbsp; {{ 'Language'  }} <b class="caret"></b></span>
                 </a>
                 <li [class.expand]="showMenu === 'languages'" class="nested">
                     <ul class="submenu">
                         <li>
                             <a (click)="changeLang('en')" href="javascript:void(0)">
-                                {{ 'English' | translate }}
+                                {{ 'English'  }}
                             </a>
                         </li>
                         <li>
@@ -87,22 +87,22 @@
                     <ul class="submenu">
                         <li>
                             <a href="javascript:void(0)">
-                                <span><i class="fa fa-fw fa-user"></i> {{ 'Profile' | translate }}</span>
+                                <span><i class="fa fa-fw fa-user"></i> {{ 'Profile'  }}</span>
                             </a>
                         </li>
                         <li>
                             <a href="javascript:void(0)">
-                                <span><i class="fa fa-fw fa-envelope"></i> {{ 'Inbox' | translate }}</span>
+                                <span><i class="fa fa-fw fa-envelope"></i> {{ 'Inbox'  }}</span>
                             </a>
                         </li>
                         <li>
                             <a href="javascript:void(0)">
-                                <span><i class="fa fa-fw fa-gear"></i> {{ 'Settings' | translate }}</span>
+                                <span><i class="fa fa-fw fa-gear"></i> {{ 'Settings'  }}</span>
                             </a>
                         </li>
                         <li>
                             <a (click)="onLoggedout()" [routerLink]="['/login']">
-                                <span><i class="fa fa-fw fa-power-off"></i> {{ 'Log Out' | translate }}</span>
+                                <span><i class="fa fa-fw fa-power-off"></i> {{ 'Log Out'  }}</span>
                             </a>
                         </li>
                     </ul>
@@ -112,6 +112,6 @@
     </div>
     <div (click)="toggleCollapsed()" [ngClass]="{ collapsed: collapsed }" class="toggle-button">
         <i class="fa fa-fw fa-angle-double-{{ collapsed ? 'right' : 'left' }}"></i>&nbsp;
-        <span>{{ 'Collapse Sidebar' | translate }}</span>
+        <span>{{ 'Collapse Sidebar'  }}</span>
     </div>
 </nav>

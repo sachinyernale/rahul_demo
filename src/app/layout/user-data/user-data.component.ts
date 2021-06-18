@@ -43,4 +43,8 @@ export class UserDataComponent implements OnInit {
       this.ngOnInit();
      }) 
   }
+
+  refresh(){
+    this.ngOnInit();
+  }
 }
